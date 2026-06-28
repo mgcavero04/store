@@ -26,7 +26,7 @@ public class DbInitializer
                 Name = "Angular Speedster Board 2000",
                 Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.",
                 Price = 20000,
-                PictureUrl = "/images/products/sb-ang1.png",
+                PictureUrl = "/images/products/oldPortfolio.jpg",
                 Brand = "Angular",
                 Type = "Boards",
                 QuantityInStock = 100
@@ -36,7 +36,7 @@ public class DbInitializer
                 Name = "Green Angular Board 3000",
                 Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.",
                 Price = 15000,
-                PictureUrl = "/images/products/sb-ang2.png",
+                PictureUrl = "/images/products/ecommercePage.png",
                 Brand = "Angular",
                 Type = "Boards",
                 QuantityInStock = 100
@@ -46,7 +46,7 @@ public class DbInitializer
                 Name = "Core Blue Hat",
                 Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.",
                 Price = 800,
-                PictureUrl = "/images/products/hat-core1.png",
+                PictureUrl = "/images/products/angular7-1.jpg",
                 Brand = "NetCore",
                 Type = "Hats",
                 QuantityInStock = 100
@@ -56,7 +56,7 @@ public class DbInitializer
                 Name = "Green React Board 3000",
                 Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.",
                 Price = 15000,
-                PictureUrl = "/images/products/sb-react1.png",
+                PictureUrl = "/images/products/angular7-2.jpg",
                 Brand = "React",
                 Type = "Boards",
                 QuantityInStock = 100
@@ -66,7 +66,57 @@ public class DbInitializer
                 Name = "Purple React Board 2000",
                 Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.",
                 Price = 20000,
-                PictureUrl = "/images/products/sb-react2.png",
+                PictureUrl = "/images/products/keystonehardscapesTabs.jpg",
+                Brand = "React",
+                Type = "Boards",
+                QuantityInStock = 100
+            },
+            new ()
+            {
+                Name = "Purple React Board 2000",
+                Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.",
+                Price = 20000,
+                PictureUrl = "/images/products/map.png",
+                Brand = "React",
+                Type = "Boards",
+                QuantityInStock = 100
+            },
+            new ()
+            {
+                Name = "Purple React Board 2000",
+                Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.",
+                Price = 20000,
+                PictureUrl = "/images/products/keystonehardscapesTabs.png",
+                Brand = "React",
+                Type = "Boards",
+                QuantityInStock = 100
+            },
+            new ()
+            {
+                Name = "Purple React Board 2000",
+                Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.",
+                Price = 20000,
+                PictureUrl = "/images/products/compositeSimpsons.png",
+                Brand = "React",
+                Type = "Boards",
+                QuantityInStock = 100
+            },
+            new ()
+            {
+                Name = "Purple React Board 2000",
+                Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.",
+                Price = 20000,
+                PictureUrl = "/images/products/tableauDayHourMostUsed.jpg",
+                Brand = "React",
+                Type = "Boards",
+                QuantityInStock = 100
+            },
+            new ()
+            {
+                Name = "Purple React Board 2000",
+                Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.",
+                Price = 20000,
+                PictureUrl = "/images/products/salaries.jpg",
                 Brand = "React",
                 Type = "Boards",
                 QuantityInStock = 100

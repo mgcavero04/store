@@ -6,17 +6,17 @@ using API.Data;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")] // http://localhost:5001/api/products
+    [Route("api/[controller]")] // http://localhost:5263/api/products
     [ApiController]
     public class ProductsController(StoreContext context) : ControllerBase
     {
 
         [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProducts()
+        public async Task<ActionResult<List<Product>>> GetProducts()//this runs (by default) when we hit the endpoint http://localhost:5263/api/products
         {
-            // Sample data for demonstration
+          
            
-            return await context.Products.ToListAsync();
+            return await context.Products.ToListAsync();//see the products seeded by DbInitializer.cs
         }
         [HttpGet("{id}")]//api/products/3
         public async Task<ActionResult<Product>> GetProduct(int id)

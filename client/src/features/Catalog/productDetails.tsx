@@ -1,22 +1,14 @@
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
 import { Button, Divider, Grid2, Table, TableBody, TableCell, TableContainer, TableRow, TextField, Typography } from "@mui/material";
-import type { Product } from "../../app/models/product";
+import { useFetchProductDetailsQuery } from "./catalogApi";
+import { Link, useParams } from "react-router-dom";
+
 
 export default function productDetails() {//component mounts
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const {id} = useParams();
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [product, setProduct] =  useState<Product | null>(null);
-  
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  useEffect(() => {
-    fetch(`http://localhost:5263/api/products/${id}`)
-      .then(response => response.json())
-      .then(data => setProduct(data))
-      .catch(error => console.log(error))
-  }, [id]) //dependency array to avoid infinite loop
-
+  const {data: product, isLoading} = useFetchProductDetailsQuery(id ? +id : 0);//hook from RTK query to fetch product details from the API
+  if (isLoading || !product) return <h3>Loading...</h3>
   const productDetails=[
     {label: 'Name', value:product?.name},
     {label: 'Description', value:product?.description},

@@ -9,14 +9,14 @@ namespace API.Data;
     
 public class DbInitializer
 {
-    public static void InitDb(WebApplication app)
+    public static async Task InitDbAsync(WebApplication app)
     {
         using var scope = app.Services.CreateScope();
         var context = scope.ServiceProvider.GetRequiredService<StoreContext>();
         
-        SeedData(context);
+        await SeedData(context);
     }
-    private static void SeedData(StoreContext context)
+    private static async Task SeedData(StoreContext context)
     {
         context.Database.Migrate();
         if (context.Products.Any()) return;

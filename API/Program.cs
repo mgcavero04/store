@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
  builder.Services.AddDbContext<StoreContext>(opt =>
  {
-     opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
      });
 
 builder.Services.AddCors();
@@ -27,7 +27,7 @@ app.UseCors(opt =>
 app.MapControllers();
 app.MapFallbackToController("Index", "Fallback");
 
-DbInitializer.InitDb(app);
+await DbInitializer.InitDbAsync(app);
 
 app.Run();
 

@@ -9,10 +9,11 @@ namespace API.Data;
     
 public class DbInitializer
 {
-    public static async Task InitDbAsync(WebApplication app)
+    public static async Task InitDb(WebApplication app)
     {
         using var scope = app.Services.CreateScope();
-        var context = scope.ServiceProvider.GetRequiredService<StoreContext>();
+        var context = scope.ServiceProvider.GetRequiredService<StoreContext>()
+            ?? throw new InvalidOperationException("Failed to retrieve store context");
         
         await SeedData(context);
     }

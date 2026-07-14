@@ -1,8 +1,13 @@
 import { type BaseQueryApi, type FetchArgs, fetchBaseQuery } from "@reduxjs/toolkit/query";
 import { startLoading, stopLoading } from "../layout/uiSlice";
 //slows down the api call to see the loading spinner
-const customBaseQuery = fetchBaseQuery({
+/*const customBaseQuery = fetchBaseQuery({
     baseUrl: 'http://localhost:5263/api/', 
+});*/
+const customBaseQuery = fetchBaseQuery({
+    
+    baseUrl: import.meta.env.VITE_API_URL, 
+    credentials: 'include'
 });
 
 const sleep = () => new Promise(resolve => setTimeout(resolve, 1000));

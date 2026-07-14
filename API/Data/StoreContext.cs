@@ -1,10 +1,15 @@
-using System;
 using Microsoft.EntityFrameworkCore;
+using API.Entities;
 
 namespace API.Data
 {
-    public class StoreContext(DbContextOptions options) : DbContext(options)
+    public class StoreContext : DbContext
     {
-        public DbSet<Entities.Product> Products { get; set; }
+        public StoreContext(DbContextOptions<StoreContext> options) : base(options)
+        {
+        }
+
+        public DbSet<Product> Products { get; set; }
+        // Ensure no properties named "Database" or "SaveChanges()" are written here!
     }
 }

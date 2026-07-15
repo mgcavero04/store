@@ -28,7 +28,8 @@ app.UseStaticFiles();
 
 app.UseCors(opt =>
 {
-    opt.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:3000"); 
+    opt.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:3000", "https://mgportfolio.azurewebsites.net");
+
 });
 app.MapControllers();
 app.MapFallbackToController("Index", "Fallback");
